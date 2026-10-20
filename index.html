@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoGuardians | Soil Protection &amp; Erosion Control — Nashik</title>
+<meta name="description" content="EcoGuardians is a community environmental monitoring platform by Group 5, SE AI-DS, PVG's COE &amp; SSDM Institute of Management, Nashik. Field documentation, geolocation mapping and survey analytics for soil protection and erosion control.">
+<meta name="author" content="Group 5 — SE AI-DS, CEPL Community Engagement Project">
+<meta name="theme-color" content="#176b43">
+<meta property="og:title" content="EcoGuardians | Protecting Our Soil, Growing Our Future">
+<meta property="og:description" content="Community field documentation, geolocation mapping and environmental analytics for soil protection and erosion control in Nashik.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar">
+  <a href="index.html" class="brand" aria-label="EcoGuardians home">
+    <span class="brand-logo" aria-hidden="true">
+      <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><path d="M224,48V96c0,53-43,96-96,96a94.13,94.13,0,0,1-44.59-11.13L35.31,232.9a8,8,0,0,1-11.31-11.31l48.1-48.1A95.55,95.55,0,0,1,48,120C48,67,91,24,144,24h32A48.05,48.05,0,0,1,224,48ZM160,40H144A80,80,0,0,0,64,120a78.29,78.29,0,0,0,14.63,45.86L153.31,91.17a8,8,0,0,1,11.31,11.31l-80,80A80,80,0,0,0,144,176c44.11,0,80-35.89,80-80V48A32,32,0,0,0,192,16Z" fill="#176b43"/></svg>
+    </span>
+    <span class="brand-name">EcoGuardians</span>
+  </a>
+  <nav class="nav-links" aria-label="Main navigation">
+    <a href="index.html" class="active">Home</a>
+    <a href="community.html">Community Hub</a>
+    <a href="insights.html">Data &amp; Maps</a>
+  </nav>
+  <a href="insights.html" class="nav-cta">
+    View Dashboard
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill">🌱 CEPL Community Engagement Project</div>
+      <h1>Protecting Our Soil,<br><span class="accent">Growing Our Future.</span></h1>
+      <p class="lead">
+        EcoGuardians is a community environmental monitoring platform for soil protection and
+        erosion control in Nashik — combining field documentation, geolocation mapping and
+        survey analytics into one simple, open web tool.
+      </p>
+      <div class="hero-actions">
+        <a href="community.html" class="btn btn-primary">
+          Explore Community
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="insights.html" class="btn btn-light">
+          View Data &amp; Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>03</strong><span>Field Visits</span></div>
+        <div><strong>100</strong><span>Survey Responses</span></div>
+        <div><strong>15</strong><span>Plantation Records</span></div>
+        <div><strong>18</strong><span>Photos Documented</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card" data-animate>
+        <h3>Why saplings fail — community survey</h3>
+        <p class="sub">Reported causes recorded during our field survey (n = 100 responses)</p>
+        <div class="bar-row">
+          <div class="bar-top"><span>Lack of watering</span><b>45%</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="45"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span>Poor soil quality</span><b>25%</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="25"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span>Stray animals</span><b>20%</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="20"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span>No ownership / follow-up</span><b>10%</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="10"></div></div>
+        </div>
+        <div class="foot">Source: EcoGuardians community survey, Nashik · documented Sept 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STAT STRIP ===================== -->
+<div class="stat-strip">
+  <div class="stat-grid" data-animate>
+    <div class="stat"><b data-count="3" data-pad="true">03</b><span>Field Locations Mapped</span></div>
+    <div class="stat"><b data-count="100">100</b><span>Community Responses</span></div>
+    <div class="stat"><b data-count="18">18</b><span>Field Photographs</span></div>
+    <div class="stat"><b data-count="15">15</b><span>Plantation Records</span></div>
+  </div>
+</div>
+
+<!-- ===================== WHAT WE DO ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="rule"></div>
+      <span class="eyebrow">What we do</span>
+      <h2>One platform. Three powerful tools.</h2>
+      <p>
+        EcoGuardians connects what the community observes in the field with the environmental
+        data needed to protect topsoil — so that plantation and conservation efforts are
+        measured, mapped and followed up instead of being forgotten.
+      </p>
+    </div>
+
+    <div class="grid g3">
+      <article class="card tool-card reveal">
+        <span class="badge-no">01</span>
+        <div class="icon green">🌿</div>
+        <h3>Community Action Hub</h3>
+        <p>
+          Upload field documentation, record soil-degradation observations and collaborate with
+          local communities and environmental experts — every visit becomes a permanent record.
+        </p>
+        <a href="community.html" class="link">Explore Hub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card tool-card reveal">
+        <span class="badge-no">02</span>
+        <div class="icon blue">📍</div>
+        <h3>Geolocation Mapping</h3>
+        <p>
+          Visualise field research locations, GPS coordinates and environmental observations
+          across Nashik on an interactive map — so degraded and restored patches can be
+          compared over time.
+        </p>
+        <a href="insights.html" class="link">Explore Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+
+      <article class="card tool-card reveal">
+        <span class="badge-no">03</span>
+        <div class="icon amber">📊</div>
+        <h3>Survey Analytics</h3>
+        <p>
+          Turn community environmental surveys into meaningful charts, patterns and
+          data-driven insights that explain why saplings fail and where intervention is
+          needed first.
+        </p>
+        <a href="insights.html" class="link">View Analytics
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="rule"></div>
+      <span class="eyebrow">Why it matters</span>
+      <h2>Soil is a resource we lose silently.</h2>
+      <p>
+        Soil erosion rarely announces itself. It shows up later — as reduced yields, poor water
+        retention and saplings that never survive their first summer.
+      </p>
+    </div>
+
+    <div class="grid g3">
+      <article class="card reveal">
+        <div class="icon">🌊</div>
+        <h3>Topsoil washes away</h3>
+        <p>
+          India loses about 5,334 million tonnes of soil every year to erosion — an average rate
+          of roughly 16.4 tonnes per hectare per year, according to government estimates.
+        </p>
+        <a class="link" href="https://www.thehindu.com/sci-tech/agriculture/India-losing-5334-million-tonnes-of-soil-annually-due-to-erosion-Govt/article15717073.ece" target="_blank" rel="noopener">Source: The Hindu / Govt. of India
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">🌾</div>
+        <h3>Land under degradation</h3>
+        <p>
+          ICAR assessments place soil loss above 10 tonnes/ha/yr on roughly 92.4 million
+          hectares of cultivable land, while about 120.4 million hectares of the country's land
+          is reported as degraded.
+        </p>
+        <a class="link" href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1810912" target="_blank" rel="noopener">Source: PIB / ICAR
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal">
+        <div class="icon">🗺</div>
+        <h3>Erosion is local</h3>
+        <p>
+          In Nashik district, soil erodibility (the K factor) varies widely across the
+          landscape — from about 0.13 to 0.53 t·ha·h/ha·MJ·mm — which means protection has to
+          be planned location by location, not as one blanket rule.
+        </p>
+        <a class="link" href="https://www.biochemjournal.com/archives/2024.v8.i11.B.2815/mapping-of-soil-erodibility-factor-k-using-geospatial-technique-for-soils-in-nashik-district-maharashtra-india" target="_blank" rel="noopener">Source: Int. J. Adv. Biochem. Res.
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MISSION ===================== -->
+<section class="section">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Our mission</span>
+      <h2 style="font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.18;letter-spacing:-.02em;color:var(--green-900)">
+        Turning environmental data into real-world action 🌱
+      </h2>
+      <p style="color:var(--text);margin-top:16px">
+        EcoGuardians aims to create a bridge between environmental observations and meaningful
+        community action. Instead of a one-time plantation drive, the project builds a
+        repeatable loop: observe, document, map, analyse — then act.
+      </p>
+      <ul class="check-list" style="margin-top:26px">
+        <li>Community-driven environmental reporting</li>
+        <li>Location-based environmental insights</li>
+        <li>Data-driven decision making for plantation follow-up</li>
+        <li>Collaboration with environmental experts and local stakeholders</li>
+      </ul>
+      <div class="tags" style="margin-top:28px">
+        <span class="tag">Soil Protection</span>
+        <span class="tag">Erosion Control</span>
+        <span class="tag">Plantation</span>
+        <span class="tag">GIS Mapping</span>
+        <span class="tag blue">Community Engagement</span>
+      </div>
+    </div>
+
+    <div class="mission-panel reveal">
+      <h3>How the loop works</h3>
+      <p>Four steps that turn a field visit into evidence.</p>
+      <div class="flow">
+        <div class="flow-step">
+          <div class="flow-dot">1</div>
+          <div><h5>Observe</h5><p>Visit the site and record what the soil, vegetation and surroundings actually show.</p></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-dot">2</div>
+          <div><h5>Document</h5><p>Capture photographs, GPS coordinates, dates and field notes for every location.</p></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-dot">3</div>
+          <div><h5>Map &amp; analyse</h5><p>Plot the locations and convert survey responses into charts and patterns.</p></div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-dot">4</div>
+          <div><h5>Act</h5><p>Share findings with the community and experts so plantation efforts get followed up.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== IMPACT ===================== -->
+<section class="section alt">
+  <div class="wrap">
+    <div class="impact reveal">
+      <div>
+        <span class="eyebrow">Small data, big impact</span>
+        <h3>Every observation adds to a clearer picture of our environment.</h3>
+        <p>
+          A single field note is not much on its own. But a hundred survey responses, three mapped
+          locations and eighteen photographs of the same district begin to show a pattern — and
+          patterns are what make protection measurable.
+        </p>
+        <div class="hero-actions" style="margin-top:28px">
+          <a href="community.html" class="btn btn-primary">See our field visits</a>
+          <a href="insights.html" class="btn btn-ghost">Open the dashboard</a>
+        </div>
+      </div>
+      <div data-animate>
+        <div class="bar-row">
+          <div class="bar-top"><span>Survey responses collected</span><b>100 / 100</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span>Field locations mapped</span><b>3 / 3</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="100"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span>Plantation activities recorded</span><b>42</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="84"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-top"><span>Photographs documented</span><b>18</b></div>
+          <div class="bar-track"><div class="bar-fill" data-w="36"></div></div>
+        </div>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:14px">
+          Figures reflect the data documented by Group 5 during the CEPL field study (Sept &ndash; Oct 2026).
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEAM ===================== -->
+<section class="section" id="team">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="rule"></div>
+      <span class="eyebrow">The team</span>
+      <h2>Group 5 &mdash; who did what</h2>
+      <p>
+        A four-member team from SE (AI &amp; DS), guided by Prof. H. S. Borse, worked on the
+        Plantation and Soil Protection topic for the CEPL Community Engagement Project.
+      </p>
+    </div>
+
+    <div class="grid g4">
+      <article class="card center reveal">
+        <div class="avatar" style="width:64px;height:64px;font-size:1rem;margin:0 auto 16px;background:#eef5fd;color:#3974a9">VD</div>
+        <h3 style="font-size:1rem">Vedant Alone</h3>
+        <p style="font-size:.88rem"><strong>Group Leader</strong> &middot; overall coordination, report writing &amp; photography</p>
+      </article>
+      <article class="card center reveal">
+        <div class="avatar" style="width:64px;height:64px;font-size:1rem;margin:0 auto 16px">BG</div>
+        <h3 style="font-size:1rem">Bhagyashri Gawali</h3>
+        <p style="font-size:.88rem">Website &amp; technical work, data collection</p>
+      </article>
+      <article class="card center reveal">
+        <div class="avatar" style="width:64px;height:64px;font-size:1rem;margin:0 auto 16px;background:#fdf6e6;color:#8a6114">SH</div>
+        <h3 style="font-size:1rem">Shlok Dubey</h3>
+        <p style="font-size:.88rem">Field-visit coordination &amp; data organisation</p>
+      </article>
+      <article class="card center reveal">
+        <div class="avatar" style="width:64px;height:64px;font-size:1rem;margin:0 auto 16px;background:#f2f7f4;color:#2f6b4d">AN</div>
+        <h3 style="font-size:1rem">Anup Ghuge</h3>
+        <p style="font-size:.88rem">Google Forms, software support &amp; awareness activity</p>
+      </article>
+    </div>
+
+    <div class="grid g2" style="margin-top:24px">
+      <article class="card reveal">
+        <div class="icon">🎓</div>
+        <h3>Guided by</h3>
+        <p><strong>Prof. H. S. Borse</strong> &mdash; project guide, Department of AI &amp; DS.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🤝</div>
+        <h3>Field partners</h3>
+        <p><strong>Prakash Nursery</strong> (owner: Sanjay More) hosted our first activity,
+        <strong>Sanap Farm</strong> our second, and <strong>Sanap Hi-Tech Nursery</strong>,
+        Dhakambhe is our community partner.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2>Ready to explore Nashik's environmental data?</h2>
+      <p>
+        Explore community reports, geographic information and environmental analytics —
+        all documented by our own field team.
+      </p>
+      <div class="hero-actions">
+        <a href="insights.html" class="btn btn-primary">
+          Explore Data &amp; Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="community.html" class="btn btn-light">Visit Community Hub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="foot-inner">
+    <div>
+      <div class="foot-brand">
+        <span class="brand-logo" aria-hidden="true">🌱</span>
+        <span class="brand-name">EcoGuardians</span>
+      </div>
+      <p>
+        A community environmental monitoring platform for soil protection and erosion control,
+        built as part of the CEPL Community Engagement Project.
+      </p>
+    </div>
+    <div class="foot-col">
+      <h4>Platform</h4>
+      <a href="index.html">Home</a>
+      <a href="community.html">Community Hub</a>
+        <a href="insights.html">Data &amp; Maps</a>
+    </div>
+    <div class="foot-col">
+      <h4>Project</h4>
+      <a href="https://www.pvgcoenashik.org/" target="_blank" rel="noopener">PVG's COE, Nashik</a>
+      <a href="index.html#team">Our Team</a>
+      <a href="insights.html#method">Methodology</a>
+      <a href="insights.html#map">Field Locations</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span data-year>2026</span> EcoGuardians · Group 5 | SE AI-DS · PVG's COE &amp; SSDM Institute of Management, Nashik</span>
+    <span>CEPL Community Engagement Project · Academic Year 2026–27</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
